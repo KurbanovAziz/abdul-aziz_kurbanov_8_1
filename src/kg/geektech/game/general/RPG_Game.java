@@ -16,7 +16,10 @@ public class RPG_Game {
         Magic magic = new Magic(260, 20, "Ilyas");
         Berserk berserk = new Berserk(280, 15, "Aziz");
         Medic assistant = new Medic(290, 10, 5, "Abdulaziz");
-        Hero[] heroes = {warrior, doc, magic, berserk, assistant};
+        Golem golem = new Golem(300,5,"Golem");
+        Thor thor = new Thor(240,10,"Thor");
+        Witcher witcher = new Witcher(200,0,"Witcher");
+        Hero[] heroes = {warrior, doc, magic, berserk, assistant, golem, thor,witcher};
 
         printStatistics(boss, heroes);
         while (!isGameFinished(boss, heroes)) {

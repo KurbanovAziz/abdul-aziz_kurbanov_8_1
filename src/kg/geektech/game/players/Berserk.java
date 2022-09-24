@@ -21,10 +21,10 @@ public class Berserk extends Hero {
 
     @Override
     public void applySuperPower(Boss boss, Hero[] heroes) {
-        int damage = RPG_Game.random.nextInt(boss.getDamage());
+        int damage = RPG_Game.random.nextInt(50);
         setSavedDamage(this.getDamage() + damage);
         boss.setHealth(boss.getHealth() - getSavedDamage());
-        System.out.println("Berserk saved damage: " +getSavedDamage());
+        System.out.println("Berserk saved damage: " + getSavedDamage());
 
     }
 }
